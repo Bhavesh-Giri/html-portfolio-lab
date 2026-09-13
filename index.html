@@ -138,7 +138,8 @@
                                 <td align="center">
                                     <h4><font color="#151521">Playing Kai's theme from 'Kung-Fu Panda'</font></h4>
                                         <audio controls>
-                                            <source src="audio.mp3" type="audio/mpeg">
+                                            <source src="audio.mp3" type="audio/mp3">
+                                            Your browser does not support audio.
                                         </audio>
                                 </td>
                             </tr>
@@ -155,7 +156,7 @@
                                     <h4><font color="#151521">Iron Man snap scene</font></h4>
                                     <video controls poster="poster.jpeg" width="500">
                                         <source src="video.mp4" type="video/mp4">
-                                                There seems to be a problem loading the video element.
+                                                Your browser does not support video.
                                     </video>
                                 </td>
                             </tr>
@@ -170,14 +171,35 @@
                             <tr>
                                 <td align="center">
                                     <h4><font color="#151521">The Godfather btw: </font></h4>
-                                    <img width="500">
+                                    <img alt="The Godfather" width="300" height="300">
                                         <source src="Michael Corleone.jpg" type="image/jpg">
-                                    </video>
+                                    </img>
                                 </td>
                             </tr>
                         </table>
                     </center>
-                <hr color="#151521" size="3" width="99%">    
+                <hr color="#151521" size="3" width="99%">
+                
+                <h1><font color="#151521">PDF Document</font></h1>
+                    <p>The HTML5 embed tag has been used to add a pdf document.</p>
+                    <center>
+                        <object data="Document.pdf" type="application/pdf" width="100%" height="500px">
+                            <p><a href="Document.pdf">Click here to download it.</a></p>
+                        </object>
+                    </center>
+                <hr color="#151521" size="3" width="99%">
+                 
+                <h1><font color="#151521">Advanced HTML Embedding(iFrame)</font></h1>
+                    <p>The iframe tag has been used to embed a youtube video.</p>
+                    <iframe 
+                        src="https://youtu.be/65f0pb4qDfI?si=tuC1BWtr2E3K3Mxi" 
+                        title="TOP 10 COUNTDOWN"
+                        width="100%" 
+                        height="500"
+                        allow="accelerometer; autoplay; fullscreen; picture-in-picture">
+                    
+                    </iframe>
+                <hr color="#151521" size="3" width="99%">
         </section>
 
     </td>

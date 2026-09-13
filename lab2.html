@@ -6,22 +6,33 @@
     <title>LAB 2 - Bhavesh Giri</title>
 </head>
 <body>
-<nav>
-  <a href="index.html">Home</a>
-  <a href="#lists">Lists</a>
-  <a href="#table">Table</a>
-  <a href="#form">Form</a>
-</nav>
- 
+    <table style="
+            border-collapse: separate; 
+                border-spacing: 10; 
+                border-radius: 10px; 
+                overflow: hidden;"
+                width="100%" bgcolor="#181B26" cellpadding="15" cellspacing="0" border="0">
+        <tr>
+            <td>
+                <nav>
+                    <center>
+                    <a href="index.html">Home   </a>
+                    <a href="#lists">Lists   </a>
+                    <a href="#table">Table   </a>
+                    <a href="#form">Form</a>
+                    </center>
+                </nav>
+            </td>
+        </tr>
+    </table>
 <center><h1>Lab 2 - Bhavesh Giri</h1></center>
-<center><p>Grade XI, St. Xavier's College, Maitighar, Kathmandu</p></center>
  
 <hr>
  
 <h2 id="lists">Lists</h2>
  
-<h3>My Skills (Unordered List)</h3>
-<ul>
+<h3>My Skills </h3>
+<ul type="circle">
   <li>HTML</li>
   <li>Basic CSS</li>
   <li>C</li>
@@ -29,7 +40,7 @@
 </ul>
  
 <h3>Steps to Create a Website (Ordered List)</h3>
-<ol>
+<ol type="i">
   <li>Plan the structure and content of the site</li>
   <li>Set up a project folder and create the HTML file</li>
   <li>Add the basic HTML skeleton and content</li>
@@ -42,7 +53,7 @@
  
 <h2 id="table">Table</h2>
  
-<table>
+<table border="1">
   <thead>
     <tr>
       <th>Subject</th>
@@ -80,18 +91,59 @@
  
 <form action="#" method="post">
   <div>
-    <label for="fullname">Full Name</label>
-    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
-  </div>
-  <div>
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-  </div>
-  <div>
-    <label for="message">Message/Information</label>
-    <input type="text" id="message" name="message" placeholder="Enter your message">
-  </div>
-  <input type="submit" value="Submit">
+        <center>
+            <center><h2><font color="#181B26">Registration Form</font></h2></center>
+                <table style="
+                        border-collapse: separate; 
+                        border-spacing: 10; 
+                        border-radius: 10px; 
+                        overflow: hidden;"
+                        border="2" bordercolor="#4a7dbd" bgcolor="#AAABBF" cellpadding="25" width="500">
+                    <tr>
+                        <td>
+                            <form>
+
+                                <p><font color="#181B26"><b><label for="fullname">Full Name</label></b></font><br>
+                                    <input type="text" id="fullname" name="fullname" size="30" placeholder="Enter your full name">
+                                </p>
+
+                                <p>
+                                    <font color="#181B26"><b><label for="email">Email</label></b></font><br>
+                                    <input type="email" id="email" name="email" size="30" placeholder="example@email.com">
+                                </p>
+
+                                <p>
+                                    <font color="#181B26"><b><label for="password">Password</label></b></font><br>
+                                    <input type="password" id="password" name="password" size="30" placeholder="Enter your password">
+                                </p>
+
+                                <p>
+                                    <font color="#181B26"><b><label for="age">Age</label></b></font><br>
+                                    <input type="number" id="age" name="age" min="1" max="100" size="30" placeholder="Enter age">
+                                </p>
+
+                                <p>
+                                    <font color="#181B26"><b><label for="dob">Date of Birth</label></b></font><br>
+                                    <input type="date" id="dob" name="dob">
+                                </p>
+
+                                <p>
+                                    <font color="#181B26"><b>Gender</b></font><br>
+                                    <label for="male"><input type="radio" id="male" name="gender" value="male"> Male</label>
+                                    <label for="female"><input type="radio" id="female" name="gender" value="female"> Female</label>
+                                    <label for="other"><input type="radio" id="other" name="gender" value="other"> Others</label>
+                                </p>
+
+                                <p>
+                                    <input type="submit" value="Submit Form">
+                                    <input type="reset" value="Clear Form">
+                                </p>
+
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+        </center>
 </form>
 </body>
 </html>
